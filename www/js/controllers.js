@@ -1,28 +1,102 @@
-angular.module('starter.controllers', [])
+var sonido = '';
 
-.controller('DashCtrl', function($scope) {})
+angular.module('starter.controllers', ['ngCordova'])
 
-.controller('ChatsCtrl', function($scope, Chats) {
-  // With the new view caching in Ionic, Controllers are only called
-  // when they are recreated or on app start, instead of every page change.
-  // To listen for when this page is active (for example, to refresh data),
-  // listen for the $ionicView.enter event:
-  //
-  //$scope.$on('$ionicView.enter', function(e) {
-  //});
-
-  $scope.chats = Chats.all();
-  $scope.remove = function(chat) {
-    Chats.remove(chat);
-  };
+.controller('AutorCtrl', function($scope, $cordovaNativeAudio) {
+	
+	$scope.ambiente = function()
+	{
+		$cordovaNativeAudio.loop('Ambiente');
+	}
+	
 })
 
-.controller('ChatDetailCtrl', function($scope, $stateParams, Chats) {
-  $scope.chat = Chats.get($stateParams.chatId);
-})
-
-.controller('AccountCtrl', function($scope) {
-  $scope.settings = {
-    enableFriends: true
-  };
+.controller('PianoCtrl', function($scope, $cordovaNativeAudio, $cordovaVibration) {
+	
+	$scope.liuKang = function()
+	{
+		$cordovaNativeAudio.stop('sonido');
+		$cordovaNativeAudio.play('LiuKang');
+		sonido = 'LiuKang';
+	}
+	
+	$scope.kungLao = function()
+	{
+		$cordovaNativeAudio.stop('sonido');
+		$cordovaNativeAudio.play('KungLao');
+		sonido = 'KungLao';
+	}
+	
+	$scope.johhnyCage = function()
+	{
+		$cordovaNativeAudio.stop('sonido');
+		$cordovaNativeAudio.play('JohnnyCage');
+		sonido = 'JohnnyCage';
+	}
+	
+	$scope.reptile = function()
+	{
+		$cordovaNativeAudio.stop('sonido');
+		$cordovaNativeAudio.play('Reptile');
+		sonido = 'Reptile';
+	}
+	
+	$scope.subZero = function()
+	{
+		$cordovaNativeAudio.stop('sonido');
+		$cordovaNativeAudio.play('SubZero');
+		sonido = 'SubZero';
+	}
+	
+	$scope.shangTsung = function()
+	{
+		$cordovaNativeAudio.stop('sonido');
+		$cordovaNativeAudio.play('ShangTsung');
+		sonido = 'ShangTsung';
+	}
+	
+	$scope.kitana = function()
+	{
+		$cordovaNativeAudio.stop('sonido');
+		$cordovaNativeAudio.play('Kitana');
+		sonido = 'Kitana';
+	}
+	
+	$scope.jax = function()
+	{
+		$cordovaNativeAudio.stop('sonido');
+		$cordovaNativeAudio.play('Jax');
+		sonido = 'Jax';
+	}
+	
+	$scope.mileena = function()
+	{
+		$cordovaNativeAudio.stop('sonido');
+		$cordovaNativeAudio.play('Mileena');
+		sonido = 'Mileena';
+	}
+	
+	$scope.baraka = function()
+	{
+		$cordovaNativeAudio.stop('sonido');
+		$cordovaNativeAudio.play('Baraka');
+		sonido = 'Baraka';
+	}
+	
+	$scope.scorpion = function()
+	{
+		$cordovaNativeAudio.stop('sonido');
+		$cordovaNativeAudio.play('Scorpion');
+		sonido = 'Scorpion';
+	}
+	
+	$scope.raiden = function()
+	{
+		$cordovaNativeAudio.stop('sonido');
+		$cordovaNativeAudio.play('Raiden');
+		sonido = 'Raiden';
+	}
+	
 });
+
+
