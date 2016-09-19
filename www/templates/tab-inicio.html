@@ -1,0 +1,10 @@
+<ion-view view-title="Nombre del Usuario">
+  <ion-content class="padding3">	
+	  <br><br><br></br> 
+      <div align="center">	  
+	  <input type="text" ng-model="nombre" id="nombre" ng-disabled="bandera==true" placeholder="Escriba aquí su nombre..." required><br></br>
+	  <button class="button button-assertive" ng-disabled="nombre==null" ng-if="bandera==false" ng-click="miBoton()">Guardar</button>
+	  <h3><font color="white" ng-if="bandera==true">Agregado a la base de datos correctamente!!</font></h3>
+	  </div>
+  </ion-content>
+</ion-view>

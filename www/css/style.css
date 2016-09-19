@@ -1,14 +1,24 @@
 .padding
 {
-	background-image:url(FondoAutor.jpg);
+	background-image: url(FondoAutor.jpg);
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
+	text-align: center;
 }
 
 .padding2
 {
-	background-image:url(FondoPiano.png);
+	background-image: url(FondoPiano.png);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+	text-align: center;
+}
+
+.padding3
+{
+	background-image: url(FondoInicio.jpg);
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;

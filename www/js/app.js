@@ -10,19 +10,20 @@ angular.module('starter', ['ionic', 'starter.controllers', 'ngCordova'])
       StatusBar.styleDefault();
     }
 	if (window.plugins && window.plugins.NativeAudio) {
-		window.plugins.NativeAudio.preloadComplex('Ambiente', 'audio/Ambiente.mp3', 0.3, 1);
-		window.plugins.NativeAudio.preloadComplex('LiuKang', 'audio/LiuKang.mp3', 0.5, 1);
-		window.plugins.NativeAudio.preloadComplex('KungLao', 'audio/KungLao.mp3', 0.5, 1);
-		window.plugins.NativeAudio.preloadComplex('JohnnyCage', 'audio/JohnnyCage.mp3', 0.5, 1);
-		window.plugins.NativeAudio.preloadComplex('Reptile', 'audio/Reptile.mp3', 0.5, 1);
-		window.plugins.NativeAudio.preloadComplex('SubZero', 'audio/SubZero.mp3', 0.5, 1);
-		window.plugins.NativeAudio.preloadComplex('ShangTsung', 'audio/ShangTsung.mp3', 0.5, 1);
-		window.plugins.NativeAudio.preloadComplex('Kitana', 'audio/Kitana.mp3', 0.5, 1);
-		window.plugins.NativeAudio.preloadComplex('Jax', 'audio/Jax.mp3', 0.5, 1);
-		window.plugins.NativeAudio.preloadComplex('Mileena', 'audio/Mileena.mp3', 0.5, 1);
-		window.plugins.NativeAudio.preloadComplex('Baraka', 'audio/Baraka.mp3', 0.5, 1);
-		window.plugins.NativeAudio.preloadComplex('Scorpion', 'audio/Scorpion.mp3', 0.5, 1);
-		window.plugins.NativeAudio.preloadComplex('Raiden', 'audio/Raiden.mp3', 0.5, 1);
+		window.plugins.NativeAudio.preloadComplex('Ambiente', 'audio/Ambiente.mp3', 0.5, 1);
+		window.plugins.NativeAudio.preloadSimple('LiuKang', 'audio/LiuKang.mp3');
+		window.plugins.NativeAudio.preloadSimple('KungLao', 'audio/KungLao.mp3');
+		window.plugins.NativeAudio.preloadSimple('JohnnyCage', 'audio/JohnnyCage.mp3');
+		window.plugins.NativeAudio.preloadSimple('Reptile', 'audio/Reptile.mp3');
+		window.plugins.NativeAudio.preloadSimple('SubZero', 'audio/SubZero.mp3');
+		window.plugins.NativeAudio.preloadSimple('ShangTsung', 'audio/ShangTsung.mp3');
+		window.plugins.NativeAudio.preloadSimple('Kitana', 'audio/Kitana.mp3');
+		window.plugins.NativeAudio.preloadSimple('Jax', 'audio/Jax.mp3');
+		window.plugins.NativeAudio.preloadSimple('Mileena', 'audio/Mileena.mp3');
+		window.plugins.NativeAudio.preloadSimple('Baraka', 'audio/Baraka.mp3');
+		window.plugins.NativeAudio.preloadSimple('Scorpion', 'audio/Scorpion.mp3');
+		window.plugins.NativeAudio.preloadSimple('Raiden', 'audio/Raiden.mp3');
+		window.plugins.NativeAudio.preloadSimple('Comenzar', 'audio/Comenzar.mp3');
 	}
   });
 })
@@ -54,8 +55,18 @@ angular.module('starter', ['ionic', 'starter.controllers', 'ngCordova'])
         controller: 'PianoCtrl'
       }
     }
+  })
+
+    .state('tab.inicio', {
+    url: '/inicio',
+    views: {
+      'tab-inicio': {
+        templateUrl: 'templates/tab-inicio.html',
+        controller: 'InicioCtrl'
+      }
+    }
   });
   
-  $urlRouterProvider.otherwise('/tab/piano');
+  $urlRouterProvider.otherwise('/tab/inicio');
 
 });
