@@ -8,7 +8,7 @@ angular.module('starter.controllers', ['ngCordova'])
 	{
 		try
 		{
-			$cordovaVibration.vibrate(30);
+			$cordovaVibration.vibrate(50);
 			$cordovaNativeAudio.play('LiuKang');
 		}
 
@@ -22,7 +22,7 @@ angular.module('starter.controllers', ['ngCordova'])
 	{	
 		try
 		{
-			$cordovaVibration.vibrate(30);
+			$cordovaVibration.vibrate(50);
 			$cordovaNativeAudio.play('KungLao');
 		}
 
@@ -36,7 +36,7 @@ angular.module('starter.controllers', ['ngCordova'])
 	{	
 		try
 		{
-			$cordovaVibration.vibrate(30);
+			$cordovaVibration.vibrate(50);
 			$cordovaNativeAudio.play('JohnnyCage');
 		}
 
@@ -50,7 +50,7 @@ angular.module('starter.controllers', ['ngCordova'])
 	{	
 		try
 		{
-			$cordovaVibration.vibrate(30);
+			$cordovaVibration.vibrate(50);
 			$cordovaNativeAudio.play('Reptile');
 		}
 
@@ -64,7 +64,7 @@ angular.module('starter.controllers', ['ngCordova'])
 	{		
 		try
 		{
-			$cordovaVibration.vibrate(30);
+			$cordovaVibration.vibrate(50);
 			$cordovaNativeAudio.play('SubZero');
 		}
 
@@ -78,7 +78,7 @@ angular.module('starter.controllers', ['ngCordova'])
 	{		
 		try
 		{
-			$cordovaVibration.vibrate(30);
+			$cordovaVibration.vibrate(50);
 			$cordovaNativeAudio.play('ShangTsung');
 		}
 
@@ -92,7 +92,7 @@ angular.module('starter.controllers', ['ngCordova'])
 	{	
 		try
 		{
-			$cordovaVibration.vibrate(30);
+			$cordovaVibration.vibrate(50);
 			$cordovaNativeAudio.play('Kitana');
 		}
 
@@ -106,7 +106,7 @@ angular.module('starter.controllers', ['ngCordova'])
 	{	
 		try
 		{
-			$cordovaVibration.vibrate(30);
+			$cordovaVibration.vibrate(50);
 			$cordovaNativeAudio.play('Jax');
 		}
 
@@ -120,7 +120,7 @@ angular.module('starter.controllers', ['ngCordova'])
 	{		
 		try
 		{
-			$cordovaVibration.vibrate(30);
+			$cordovaVibration.vibrate(50);
 			$cordovaNativeAudio.play('Mileena');
 		}
 
@@ -134,7 +134,7 @@ angular.module('starter.controllers', ['ngCordova'])
 	{		
 		try
 		{
-			$cordovaVibration.vibrate(30);
+			$cordovaVibration.vibrate(50);
 			$cordovaNativeAudio.play('Baraka');
 		}
 
@@ -148,7 +148,7 @@ angular.module('starter.controllers', ['ngCordova'])
 	{	
 		try
 		{
-			$cordovaVibration.vibrate(30);
+			$cordovaVibration.vibrate(50);
 			$cordovaNativeAudio.play('Scorpion');
 		}
 
@@ -162,7 +162,7 @@ angular.module('starter.controllers', ['ngCordova'])
 	{	
 		try
 		{
-			$cordovaVibration.vibrate(30);
+			$cordovaVibration.vibrate(50);
 			$cordovaNativeAudio.play('Raiden');
 		}
 
@@ -174,7 +174,7 @@ angular.module('starter.controllers', ['ngCordova'])
 })
 
 .controller('InicioCtrl', function($scope, $ionicPlatform, $cordovaNativeAudio, $cordovaVibration){
-
+	
 	$scope.bandera = false;
 	
 	$scope.MisMensajes=[];
@@ -200,7 +200,7 @@ angular.module('starter.controllers', ['ngCordova'])
 		try
 		{
 			$cordovaVibration.vibrate(30);
-			$cordovaNativeAudio.play('Comenzar');
+			$cordovaNativeAudio.play('Guardar');
 		}
 		
 		catch(Exception)

@@ -23,7 +23,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'ngCordova'])
 		window.plugins.NativeAudio.preloadSimple('Baraka', 'audio/Baraka.mp3');
 		window.plugins.NativeAudio.preloadSimple('Scorpion', 'audio/Scorpion.mp3');
 		window.plugins.NativeAudio.preloadSimple('Raiden', 'audio/Raiden.mp3');
-		window.plugins.NativeAudio.preloadSimple('Comenzar', 'audio/Comenzar.mp3');
+		window.plugins.NativeAudio.preloadSimple('Guardar', 'audio/Guardar.mp3');
 	}
   });
 })
